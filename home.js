@@ -5,7 +5,7 @@ buttonElement.addEventListener("click", ()=>{
     console.log("Clicked");
     imageNum = 10;
     addNewImages();
-});
+}, {passive: true});
 
 function addNewImages() {
     for (let index = 0; index < imageNum; index++) {
