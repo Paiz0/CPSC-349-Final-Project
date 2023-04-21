@@ -1,0 +1,75 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    color: #333333;
+    /* change the color to black */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #008000;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-top: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="address"],
+  input[type="city"],
+  input[type="state"],
+  input[type="zip"] {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #008000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #006600;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
