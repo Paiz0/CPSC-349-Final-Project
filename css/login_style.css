@@ -1,17 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
-
-h1 {
-    text-align: center;
-    color: #333333;
-    margin-top: 50px;
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
 }
 
 form {
+    position: absolute;
     width: 300px;
-    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
@@ -57,4 +56,70 @@ input[type="submit"]:hover {
 
 .link:hover {
     color: #4CAF50;
+}
+
+/* ----------------------------NAV BAR CSS--------------------------  */
+header{
+    box-sizing: border-box;
+    background-color: #24252a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 2%;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo span{
+    color: lightgrey;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.logo img{
+    border-radius: 50px;
+}
+
+.links{
+    list-style: none;
+}
+
+.links li{
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
 }

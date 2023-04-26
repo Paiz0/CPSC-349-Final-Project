@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: grey;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -13,16 +13,8 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-top: 0;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #008000;
-    font-weight: bold;
-    margin-top: 0;
+    text-align: center;
+    padding: 15px;
   }
 
   form {
@@ -73,3 +65,69 @@ body {
     font-size: 14px;
     margin-top: 5px;
   }
+
+/* ----------------------------NAV BAR CSS--------------------- */
+  header{
+    box-sizing: border-box;
+    background-color: #24252a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 2%;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo span{
+    color: lightgrey;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.logo img{
+    border-radius: 50px;
+}
+
+.links{
+    list-style: none;
+}
+
+.links li{
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}

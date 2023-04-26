@@ -8,6 +8,26 @@
   <link rel="stylesheet" href="../css/register_style.css">
 </head>
 <body>
+  <header>
+		<h1 class="logo">
+			<div>
+				<a href="./home.html">
+					<img src="https://picsum.photos/90?random=${Math.floor(Math.random()*2000)}" alt="LOGO">
+				</a>
+			</div>
+			<div>
+        <a href="./home.html">
+          <span>Random Picture Gen</span>
+        </a>
+			</div>
+		</h1>
+		<nav>
+			<ul class="links">
+				<li><a href="./home.html">Home</a></li>
+				<a class="loginBtn" href="./login.html"><button>Login</button></a>
+			</ul>
+		</nav>
+	</header>
   <h1>Registration</h1>
   <form action="process.php" method="post">
     <label for="username">Username:</label>

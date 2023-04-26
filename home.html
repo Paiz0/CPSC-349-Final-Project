@@ -6,8 +6,29 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Random Image Gen</title>
         <link rel="stylesheet" href="../css/home_style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500">
     </head>
     <body>
+        <header>
+            <h1 class="logo">
+                <div>
+                    <a href="./home.html">
+                        <img src="https://picsum.photos/90?random=${Math.floor(Math.random()*2000)}" alt="LOGO">
+                    </a>
+                </div>
+                <div>
+                    <a href="./home.html">
+                        <span>Random Picture Gen</span>
+                    </a>
+                </div>
+            </h1>
+            <nav>
+                <ul class="links">
+                    <li><a href="./home.html">Home</a></li>
+                    <a class="loginBtn" href="./login.html"><button>Login</button></a>
+                </ul>
+            </nav>
+        </header>
         <div class="image-container">
             <img src="https://picsum.photos/300?random=1">
             <img src="https://picsum.photos/300?random=2">
@@ -20,7 +41,9 @@
             <img src="https://picsum.photos/300?random=9">
             <img src="https://picsum.photos/300?random=10">
         </div>
-        <button class="btn">Load More</button>
+        <div class="button">
+            <button class="btn">Load More</button>
+        </div>
         <script src="../js/home.js"></script>
     </body>
 </html>
