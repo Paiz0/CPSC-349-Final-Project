@@ -1,3 +1,4 @@
+/*----------------------------------------------NavBar----------------------------------------------*/
 header{
     box-sizing: border-box;
     background-color: #24252a;
@@ -39,7 +40,8 @@ li, a, button{
 
 .links li{
     display: inline-block;
-    padding: 0px 50px;
+    padding: 0px 10px;
+    margin-left: 10px;
 }
 
 .links li a{
@@ -50,8 +52,8 @@ li, a, button{
     color: #0088a9;
 }
 
-button{
-    padding: 9px 25px;
+.loginBtn{
+    padding: 10px 15px 10px 15px;
     background-color: rgba(0,136,169,1);
     border: none;
     border-radius: 50px;
@@ -59,10 +61,12 @@ button{
     transition: all 0.3 ease 0s;
 }
 
-button:hover{
+.loginBtn:hover{
     background-color: rgba(0,136,169,0.8);
 }
+/*----------------------------------------------NavBar END----------------------------------------------*/
 
+/*-------------------------------------------------BODY-------------------------------------------------*/
 
 /* styling that affects anything within the body of the html code */
 body{
@@ -106,7 +110,21 @@ body{
 }
 
 /* action changes when hovering the mouse over the button */
-.btn:hover{
+button:hover:not(.favBtn){
     opacity: 0.7;
+    background-color: rgba(0,136,169,0.8);
 }
 
+.favBtn{
+    border: none;
+    outline: none;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.favBtn:active{
+    transform: translateY(2px);
+}
+
+
+/*----------------------------------------------BODY END----------------------------------------------*/
