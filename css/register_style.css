@@ -29,11 +29,8 @@ body {
 
   input[type="text"],
   input[type="email"],
-  input[type="tel"],
-  input[type="address"],
-  input[type="city"],
-  input[type="state"],
-  input[type="zip"] {
+  input[type="password"],
+  input[id="name"] {
     display: block;
     padding: 10px;
     width: 100%;
@@ -42,6 +39,79 @@ body {
     font-size: 16px;
     margin-top: 5px;
     box-sizing: border-box;
+  }
+
+  #size{
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+
+  .box-con {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+  .box-con input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+
+  .box-con:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+
+  .box-con input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+
+  .box-con input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+
+  .box-con .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   input[type="submit"] {
